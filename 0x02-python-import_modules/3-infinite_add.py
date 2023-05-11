@@ -2,7 +2,6 @@
 
 
 if __name__ == "__main__":
-
     import sys
 
     le = sys.argv
