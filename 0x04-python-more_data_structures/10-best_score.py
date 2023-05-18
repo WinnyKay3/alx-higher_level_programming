@@ -8,4 +8,3 @@ def best_score(a_dictionary):
     for t in a_dictionary:
         if a_dictionary[t] == best:
             return t
-
