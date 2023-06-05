@@ -5,6 +5,7 @@
 
 class Rectangle:
     """rectangle class"""
+
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
@@ -55,7 +56,7 @@ class Rectangle:
 
         if self.__width > 0 and self.__height > 0:
             for y in range(self.__height):
-                rectangle += '#' * self.__width + '\n'
+                rectangle += "#" * self.__width + "\n"
 
         return rectangle[:-1]
 

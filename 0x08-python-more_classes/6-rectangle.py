@@ -10,6 +10,7 @@ class Rectangle:
     """
 
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -40,13 +41,12 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-
         """
         return area of the rectangle
         """
         return self.__width * self.__height
-    def perimeter(self):
 
+    def perimeter(self):
         """
         perimeter of a rectangle
         """
@@ -62,7 +62,8 @@ class Rectangle:
         return s
 
     def __repr__(self):
-        return("Rectangle(" + str(self.__width) + "," + str(self.__height) + ")")
+        return "Rectangle(" + str(self.__width) + "," + str(self.__height) + ")"
+
     def __del__(self):
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
