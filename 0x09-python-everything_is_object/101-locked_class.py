@@ -6,4 +6,3 @@ class LockedClass:
     """Prevents user from instantiatin a new lockedClass attribute."""
 
     __slots__ = ["first_name"]
-
