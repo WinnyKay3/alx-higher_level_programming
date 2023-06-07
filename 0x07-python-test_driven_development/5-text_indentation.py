@@ -14,4 +14,4 @@ def text_indentation(text):
     text = "?\n\n".join(text.split("?"))
     text = ":\n\n".join(text.split(":"))
     text = "\n".join(map(str.strip, text.split("\n")))
-    print(text)
+    print(text, end="")
