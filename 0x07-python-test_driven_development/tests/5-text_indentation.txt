@@ -16,6 +16,7 @@ and ``:``.
     >>> text_indentation("Hello?")
     Hello?
     <BLANKLINE>
+    <BLANKLINE>
 
 No spaces are printed at the beginning of a line.
 
@@ -24,10 +25,12 @@ No spaces are printed at the beginning of a line.
     >>> text_indentation("   Hi there.")
     Hi there.
     <BLANKLINE>
+    <BLANKLINE>
 
 ::
 
     >>> text_indentation("          ")
+    <BLANKLINE>
 
 Similarly, no spaces are printed at the end of each printed line.
 
@@ -36,6 +39,7 @@ Similarly, no spaces are printed at the end of each printed line.
     >>> text_indentation("Hello.   ")
     Hello.
     <BLANKLINE>
+    <BLANKLINE>
 
 ::
 
@@ -43,6 +47,7 @@ Similarly, no spaces are printed at the end of each printed line.
     Woah now.
     <BLANKLINE>
     This is messy.
+    <BLANKLINE>
     <BLANKLINE>
 
 New lines are only printed for the characters ``.``, ``?``, and ``:`` -
@@ -63,6 +68,7 @@ New lines within a string are printed as normal.
     <BLANKLINE>
     Printed.
     <BLANKLINE>
+    <BLANKLINE>
 
 ::
 
@@ -72,11 +78,13 @@ New lines within a string are printed as normal.
     <BLANKLINE>
     We just printed three new lines.
     <BLANKLINE>
+    <BLANKLINE>
 
 ::
     >>> text_indentation("A sneaky \n new line.")
-    A sneaky 
+    A sneaky
     new line.
+    <BLANKLINE>
     <BLANKLINE>
 
 A combo example:
