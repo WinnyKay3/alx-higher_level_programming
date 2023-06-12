@@ -8,6 +8,7 @@ class BaseGeometry:
     """
     BaseGeometry blueprint
     """
+
     def area(self):
         """
         the area of an object is done here
