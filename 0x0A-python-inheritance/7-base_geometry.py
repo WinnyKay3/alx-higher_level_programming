@@ -1,17 +1,23 @@
 #!/usr/bin/python3
-
-"""Defines an empty class of geometry"""
-
+"""
+a module containing an empty class of geometry
+"""
 
 
 class BaseGeometry:
-    """Represent base geometry"""
-
+    """
+    BaseGeometry blueprint
+    """
     def area(self):
-        """Not implemented"""
+        """
+        the area of an object is done here
+        """
         raise Exception("area() is not implemented")
+
     def integer_validator(self, name, value):
-        """Validate a parameter as an int"""
+        """
+        used to validate an integer
+        """
         if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
         elif value <= 0:
