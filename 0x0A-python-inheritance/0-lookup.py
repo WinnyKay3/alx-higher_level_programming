@@ -3,5 +3,6 @@
 """Defines an object attribute look up function."""
 
 
-def lookup(object):
-    return dir(object)
+def lookup(obj):
+    """Return a list of an objects available attributes."""
+    return (dir(obj))
