@@ -3,7 +3,6 @@
 """Defines an inherited list class Mylist."""
 
 
-
 class MyList(list):
     """Implements sorted printing for the built-in list class."""
 
