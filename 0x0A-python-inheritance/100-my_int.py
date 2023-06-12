@@ -2,6 +2,7 @@
 
 """Defines a class myint that inherits from int."""
 
+
 class MyInt(int):
     """inverts int operators"""
 
