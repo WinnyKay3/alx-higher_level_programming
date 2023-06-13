@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 
-'''Describes a Pascal's Triangle func'''
+"""Describes a Pascal's Triangle func"""
 
 
 def pascal_triangle(k):
-    '''Represent a pascal's triangle of size k
-    Returns list of lists of integers representing the tri'''
+    """Represent a pascal's triangle of size k
+    Returns list of lists of integers representing the tri"""
     if k <= 0:
         return []
 
