@@ -5,5 +5,5 @@ if (isNaN(x)) {
 } else {
   for (let k = 0; k < x; k++) {
     console.log('C is fun');
- }
+  }
 }
