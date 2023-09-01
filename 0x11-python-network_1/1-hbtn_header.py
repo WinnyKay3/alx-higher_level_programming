@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Displays X-request id variable of request to a given url.'''
+"""Displays X-request id variable of request to a given url."""
 
 import sys
 import urllib.request
@@ -10,4 +10,4 @@ if __name__ == "__main__":
 
     request = urllib.request.Request(url)
     with urllib.request.urlopen(request) as response:
-         print(dict(response.headers).get("X-Request-Id"))
+        print(dict(response.headers).get("X-Request-Id"))
