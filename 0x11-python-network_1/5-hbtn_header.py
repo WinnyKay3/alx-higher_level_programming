@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""Script that takes url and sends req to the url and displays value 
-of variable X-request-id in response header"""
-
+"""Displays the X-Request-Id header variable of a request to a given URl"""
 import sys
 import requests
 
