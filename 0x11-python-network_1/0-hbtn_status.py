@@ -5,7 +5,7 @@ from urllib import request
 
 if __name__ == "__main__":
     url = "https://alx-intranet.hbtn.io/status"
-    with urllib.request.urlopen(request) as response:
+    with request.urlopen(url) as response:
         body = response.read()
         print("Body response:")
         print("\t- type: {}".format(type(response_body)))
