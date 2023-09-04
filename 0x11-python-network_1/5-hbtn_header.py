@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-'''Script that takes url and sends req to the url and displays value 
-of variable X-request-id in response header'''
+"""Script that takes url and sends req to the url and displays value 
+of variable X-request-id in response header"""
 
 import sys
 import requests

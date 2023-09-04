@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Fetches https:intranet.hbtn.io/status'''
+"""Fetches https:intranet.hbtn.io/status"""
 import requests
 
 if __name__ == "__main__":
@@ -7,4 +7,3 @@ if __name__ == "__main__":
     print("Body response:")
     print("\t- type: {}".format(type(k.text)))
     print("\t- content: {}".format(k.text))
-

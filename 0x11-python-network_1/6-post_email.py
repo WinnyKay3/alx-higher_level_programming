@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Sends post request to given url with given email.'''
+""" Sends post request to given url with given email."""
 import sys
 import requests
 

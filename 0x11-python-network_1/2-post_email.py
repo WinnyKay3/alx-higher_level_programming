@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-'''Sends a post request to a given URL with given email
-Displays the body of the response'''
+"""Sends a post request to a given URL with given email
+Displays the body of the response"""
 import sys
 import urllib.request
 import urllib.parse
