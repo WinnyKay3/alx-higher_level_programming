@@ -4,8 +4,8 @@ const Rectangle = require('./5-square');
 
 module.exports = class Square extends Rectangle {
   constructor (size) {
-     super(size, size);
-   }
+    super(size, size);
+  }
 
   charPrint (c) {
     if (c === undefined) {
@@ -15,8 +15,8 @@ module.exports = class Square extends Rectangle {
       let row = '';
       for (let n = 0; n < this.height; n++) {
 	 row += c;
-       }
-       console.log(row);
-     }
-   }
+      }
+      console.log(row);
+    }
+  }
 };
