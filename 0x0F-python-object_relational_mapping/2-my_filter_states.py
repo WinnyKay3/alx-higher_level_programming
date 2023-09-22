@@ -1,30 +1,32 @@
 #!/usr/bin/python3
-# Displays all values in the states table of database hbtn_0e_0_usa
-# Usage: ./my_filter_states.py
-
-import sys
-import MySQLdb
+"""
+Module that connects a python script to a database
+"""
 
 if __name__ == "__main__":
-    if len(sys.argv) != 5:
-        print("Usage: ./my_filter_states.py <usr> <pwd> <db> <state_name>")
-	sys.exit(1)
-    
-    usr = sys.argv[1]
-    pwd = sys.argv[2]
-    db  = sys.argv[3]
-    state_name = sys.argv[4]
+    import MySQLdb
+    from sys import argv
 
-    try:
-        db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
-        c = db.cursor()
-        c.execute("SELECT * FROM states WHERE BINARY name = %s")
+# Connect database using command-line arguments
+my_db = MySQLdb.connect(
+    host="localhost", user=argv[1], password=argv[2], db=argv[3], port=3306
+)
 
-	results = c.fetchall()
-	for row in results:
-	    print(row)
-	db.close()
-    except MySQLdb.Error as e:
-        print("MySQL Error {}: {}".format(e.args[0], e.args[1]))
-	sys.exit(1)
-        
+my_cursor = my_db.cursor()
+
+# Execute a SELECT query to fetch data
+my_cursor.execute(
+    """
+       SELECT * FROM states  WHERE name LIKE BINARY '{}'
+       ORDER BY states.id ASC
+     """.format(
+        argv[4]
+    )
+)
+my_data = my_cursor.fetchall()
+
+
+for row in my_data:
+    print(row)
+my_cursor.close()
+my_db.close()
