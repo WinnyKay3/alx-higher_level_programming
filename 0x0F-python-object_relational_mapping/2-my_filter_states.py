@@ -3,9 +3,8 @@
 Module that connects a python script to a database
 """
 
-if __name__ == "__main__":
-    import MySQLdb
-    from sys import argv
+import MySQLdb
+from sys import argv
 
 # Connect database using command-line arguments
 my_db = MySQLdb.connect(
