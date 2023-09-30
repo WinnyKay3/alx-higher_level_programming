@@ -20,7 +20,7 @@ my_cursor = my_db.cursor()
 # Execute a SELECT query to fetch data
 my_cursor.execute(
     """
-       SELECT * FROM states  WHERE name LIKE BINARY '{}'
+       SELECT * FROM states  WHERE name LIKE BINARY '%{}%'
        ORDER BY states.id ASC
      """.format(
         argv[4]
