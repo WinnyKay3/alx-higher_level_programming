@@ -9,7 +9,10 @@ if __name__ == "__main__":
 
 # Connect database using command-line arguments
 my_db = MySQLdb.connect(
-    host="localhost", user=argv[1], password=argv[2], db=argv[3], port=3306
+    user=argv[1],
+    passwd=argv[2],
+    db=argv[3],
+    host=("localhost" if len(argv) < 6 else argv[5]),
 )
 
 my_cursor = my_db.cursor()
